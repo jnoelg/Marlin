@@ -1,3 +1,19 @@
+# Marlin 1.1.x for PrintrBot Simple Metal with PrintrBoard Rev.D
+
+Forked from https://github.com/MarlinFirmware/Marlin
+
+## How to sync
+`$ git remote -v`
+
+If "upstream" is not listed
+`$ git remote add upstream https://github.com/MarlinFirmware/Marlin.git`
+
+`$ git fetch upstream`
+`$ git checkout 1.1.x`
+`$ git merge upstream/1.1.x`
+
+
+
 # Marlin 3D Printer Firmware
 <img align="right" src="../../raw/1.1.x/buildroot/share/pixmaps/logo/marlin-250.png" />
 
