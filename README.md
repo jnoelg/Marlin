@@ -4,6 +4,13 @@ Forked from https://github.com/MarlinFirmware/Marlin
 
 Other reference materials:
 - https://github.com/Printrbot/printrboardmodernmarlin
+- https://github.com/Printrbot/printrboardmodernmarlin/tree/master/Simple_Metal/source/revD
+
+Alternative build with Arduino:
+- https://www.arduino.cc/en/Main/Software
+- https://www.pjrc.com/teensy/td_download.html
+
+Diff vs original branch: https://github.com/jnoelg/Marlin/compare/1.1.x...jnoelg:1.1.x-PrintrBot-Simple-Metal-RevD?diff=split
 
 
 ## How to sync the 1.1.x branch from the Marlin project
