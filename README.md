@@ -2,14 +2,25 @@
 
 Forked from https://github.com/MarlinFirmware/Marlin
 
-## How to sync
+Other reference materials:
+- https://github.com/Printrbot/printrboardmodernmarlin
+
+
+## How to sync the 1.1.x branch from the Marlin project
+Validate if an "upstream" remote is defined:
+
 `$ git remote -v`
 
-If "upstream" is not listed
+If it is not listed, add it with:
+
 `$ git remote add upstream https://github.com/MarlinFirmware/Marlin.git`
 
+Update the 1.1.x branch with:
+
 `$ git fetch upstream`
+
 `$ git checkout 1.1.x`
+
 `$ git merge upstream/1.1.x`
 
 
