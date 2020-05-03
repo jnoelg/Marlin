@@ -763,7 +763,7 @@ void Stepper::set_directions() {
     register uint8_t r2 = (curr_step) & 0xFF;
     register uint8_t r3 = (curr_step >> 8) & 0xFF;
     register uint8_t r4 = (curr_step >> 16) & 0xFF;
-    register uint8_t r1,r5,r6,r7,r8,r9,r10,r11; /* Temporary registers */
+    register uint8_t r1 = 0, r5 = 0, r6 = 0, r7 = 0, r8 = 0, r9 = 0, r10 = 0, r11 = 0; /* Temporary registers */
 
     __asm__ __volatile(
       /* umul24x24to16hi(t, bezier_AV, curr_step);  t: Range 0 - 1^16 = 16 bits*/
