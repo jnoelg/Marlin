@@ -378,9 +378,9 @@
                                   // is more than PID_FUNCTIONAL_RANGE then the PID will be shut off and the heater will be set to min/max.
 
   // E3D EV6
-  #define DEFAULT_Kp 24.89
-  #define DEFAULT_Ki 1.75
-  #define DEFAULT_Kd 88.71
+  #define DEFAULT_Kp 27.99
+  #define DEFAULT_Ki 2.07
+  #define DEFAULT_Kd 94.58
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
@@ -434,11 +434,16 @@
 
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
+  // PrintrBot heating bed upgrade
+  #define DEFAULT_bedKp 386.36
+  #define DEFAULT_bedKi 52.99
+  #define DEFAULT_bedKd 704.23
+
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_bedKp 10.00
-  #define DEFAULT_bedKi .023
-  #define DEFAULT_bedKd 305.4
+  //#define DEFAULT_bedKp 10.00
+  //#define DEFAULT_bedKi .023
+  //#define DEFAULT_bedKd 305.4
 
   //120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   //from pidautotune
