@@ -81,7 +81,7 @@
 // User-specified version info of this build to display in [Pronterface, etc] terminal window during
 // startup. Implementation of an idea by Prof Braino to inform user that any changes made to this
 // build by the user have been successfully uploaded into firmware.
-#define STRING_CONFIG_H_AUTHOR "(jnoel, 2020-05-02)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(jnoel, 2020-05-10)" // Who made the changes.
 #define SHOW_BOOTSCREEN
 #define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
 #define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
@@ -350,7 +350,7 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 275
+#define HEATER_0_MAXTEMP 285
 #define HEATER_1_MAXTEMP 275
 #define HEATER_2_MAXTEMP 275
 #define HEATER_3_MAXTEMP 275
@@ -643,7 +643,7 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION          1500    // X, Y, Z and E acceleration for printing moves // Original FW = 3000
+#define DEFAULT_ACCELERATION          1000    // X, Y, Z and E acceleration for printing moves // Original FW = 3000
 #define DEFAULT_RETRACT_ACCELERATION  3000    // E acceleration for retracts
 #define DEFAULT_TRAVEL_ACCELERATION   1500    // X, Y, Z acceleration for travel (non printing) moves // Original FW = 3000
 
@@ -655,10 +655,10 @@
  * When changing speed and direction, if the difference is less than the
  * value set here, it may happen instantaneously.
  */
-#define DEFAULT_XJERK                 10.0    // Original FW = 20.0
-#define DEFAULT_YJERK                 10.0    // Original FW = 20.0
+#define DEFAULT_XJERK                  8.0    // Original FW = 20.0
+#define DEFAULT_YJERK                  8.0    // Original FW = 20.0
 #define DEFAULT_ZJERK                  0.3    // Original FW =  0.4
-#define DEFAULT_EJERK                  4.0    // Original FW =  5.0
+#define DEFAULT_EJERK                  5.0    // Original FW =  5.0
 
 /**
  * S-Curve Acceleration
@@ -668,7 +668,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-#define S_CURVE_ACCELERATION // build warnings when activated...
+#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
